@@ -8,10 +8,10 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 
 const App = () => (
-  <Router>
+  <Router basename="/portfolio"> {/* Move basename here */}
     <div className="bg-black min-h-screen text-white">
       <Nav />
-      <Routes basename="/portfolio">
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
