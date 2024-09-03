@@ -11,7 +11,7 @@ const App = () => (
   <Router>
     <div className="bg-black min-h-screen text-white">
       <Nav />
-      <Routes>
+      <Routes basename="/portfolio">
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
