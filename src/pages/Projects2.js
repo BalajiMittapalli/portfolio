@@ -19,17 +19,19 @@ const Projects2 = () => {
             key={index}
             className="relative bg-gray-900 border border-purple-600 rounded-lg overflow-hidden w-80 h-80 flex flex-col"
           >
+            {/* Reduced Image Size */}
             <img
               src={project.image}
-              alt={project.name}
-              className="w-full h-48 object-cover border-b border-purple-600"
+              alt={project.title}
+              className="w-full h-40 object-cover border-b border-purple-600"
             />
             <div className="p-4 flex flex-col flex-grow">
-              <h3 className="text-xl font-bold mb-2 text-white">{project.name}</h3>
-              <p className="text-base text-gray-300 flex-grow">{project.description}</p>
-              {/* Empty div to push the icons to the bottom */}
-              <div className="flex-grow"></div>
-              <div className="absolute bottom-2 right-4 flex space-x-2">
+              <h3 className="text-lg font-bold text-white">{project.title}</h3>
+              <p className="text-sm text-gray-300 mt-1 flex-grow">
+                {project.description}
+              </p>
+              {/* Moved Links to a Fixed Position */}
+              <div className="mt-2 flex space-x-4">
                 {project.externalLink && (
                   <a
                     href={project.externalLink}

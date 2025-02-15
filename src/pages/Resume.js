@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import pdf from "../assets/Resume.pdf"; // Adjust the path as needed
+import pdf from "../assets/Resume.pdf"; 
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
